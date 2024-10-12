@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import logo from '../assets/logo.png';
-import cart from '../assets/cart_icon.png';
+import logo from '../../assets/logo.png';
+import cart from '../../assets/cart_icon.png';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -13,7 +13,7 @@ function Navbar() {
         <div className='navbar'>
             <div className='nav-logo'>
                 <img src={logo} alt="logo" />
-                <p>Shoffy-Ecom</p>
+                <p>Shoffy</p>
             </div>
             <ul className='nav-menu'>
                 <li onClick={() => { setMenu("shop") }}><Link className='text-link' to='/'>Shop</Link>{menu === "shop" ? <hr /> : <></>}</li>
